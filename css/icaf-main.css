@@ -1,0 +1,555 @@
+/* General */
+.no-hpad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-height {
+  height: 100%;
+}
+
+body > .container {
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Nunito";
+  font-style: normal;
+}
+
+.section-title {
+  color: #134380;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.section-description {
+  color: #134380;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 79px;
+}
+
+.section-description span {
+  width: 800px;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  background: #373535;
+  width: 1356px;
+  margin: 48px 44px 64px 40px;
+  border-radius: 9px;
+}
+
+.carousel-wrapper .storiesContainer {
+  width: 1020px;
+  height: 695px;
+  margin: 0px auto;
+}
+
+/* Cross-Fade */
+.cross-fade {
+  position: relative;
+}
+
+.cross-fade > img,
+.cross-fade > div {
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+
+/* These animations, each meant for two elements, will fade-in after half the time (1s for the fade) */
+@keyframes welcome-fade {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes mural-fade {
+  0% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Section Specific */
+.welcome {
+  width: 1358px;
+  margin: 0 auto 49px;
+  margin-top: 147px;
+}
+
+.welcome ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcome ul li {
+  float: left;
+  /* Cross fade timing*/
+}
+
+.welcome ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.welcome ul li img {
+  border-radius: 9px;
+}
+
+.welcome ul li.cf-group1 > img,
+.welcome ul li.cf-group1 > div {
+  animation-name: welcome-fade;
+  animation-duration: 10s;
+}
+
+.welcome ul li.cf-group1 > img:nth-child(1),
+.welcome ul li.cf-group1 > div:nth-child(1) {
+  animation-delay: -5s;
+}
+
+.welcome ul li.cf-group2 > img,
+.welcome ul li.cf-group2 > div {
+  animation-name: welcome-fade;
+  animation-duration: 10s;
+}
+
+.welcome ul li.cf-group2 > img:nth-child(1),
+.welcome ul li.cf-group2 > div:nth-child(1) {
+  animation-delay: -7.5s;
+}
+
+.welcome ul li.cf-group2 > img:nth-child(2),
+.welcome ul li.cf-group2 > div:nth-child(2) {
+  animation-delay: -2.5s;
+}
+
+.welcome .upper {
+  margin-bottom: 30px;
+}
+
+.welcome .upper .welcome-box {
+  width: 341px;
+  height: 285px;
+  background: #134380;
+  border-radius: 9px;
+}
+
+.welcome .upper .welcome-box p:first-of-type {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffd743;
+  font-family: 'Nunito';
+}
+
+.welcome .upper .welcome-box p:last-of-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.welcome .upper .welcome-box .main-welcome {
+  padding: 38px 38px 38px 47px;
+}
+
+.welcome .upper .welcome-box .alt-welcome {
+  padding: 28px 32px 24px 44px;
+}
+
+.welcome .upper .welcome-box .alt-welcome p:last-of-type {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.welcome .upper .welcome-box .alt-welcome a {
+  position: absolute;
+  right: 45px;
+  bottom: 0;
+}
+
+.welcome .upper .welcome-box .alt-welcome a:hover {
+  text-decoration: none;
+}
+
+.welcome .upper .welcome-box .alt-welcome a div {
+  width: 133px;
+  height: 46px;
+  background: #ffd743;
+  border-radius: 37px;
+}
+
+.welcome .upper .welcome-box .alt-welcome a div span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #134380;
+  text-align: center;
+}
+
+.welcome .upper .img1 {
+  width: 351px;
+  height: 285px;
+}
+
+.welcome .upper .img2 {
+  width: 339px;
+  height: 285px;
+}
+
+.welcome .upper .img3 {
+  width: 267px;
+  height: 285px;
+}
+
+.welcome .lower .img4 {
+  width: 341px;
+  height: 405px;
+}
+
+.welcome .lower .img5 {
+  width: 563px;
+  height: 405px;
+}
+
+.welcome .lower .img6 {
+  width: 414px;
+  height: 405px;
+}
+
+.mural-wrapper-background {
+  width: 1445px;
+  height: 713px;
+  background-color: rgba(19, 67, 128, 0.15);
+}
+
+.mural-wrapper-background .mural-wrapper {
+  width: 1358px;
+  margin: 54px auto 54px;
+}
+
+.mural-wrapper-background .mural-wrapper .murals,
+.mural-wrapper-background .mural-wrapper .murals img {
+  width: 825px;
+  height: 605px;
+}
+
+.mural-wrapper-background .mural-wrapper .murals img {
+  border-radius: 9px 0px 0px 9px;
+  animation-name: mural-fade;
+  animation-duration: 6s;
+}
+
+.mural-wrapper-background .mural-wrapper .murals img:nth-child(1) {
+  animation-delay: -3s;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text {
+  width: 533px;
+  height: 605px;
+  background-color: #134380;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 9px 9px 0px;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text .mural-title {
+  color: #ffd743;
+  margin-top: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 488px;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text .mural-content {
+  color: #ffffff;
+  margin-top: 36px;
+  margin-right: 238px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text ul {
+  margin: 10px 0;
+  margin-right: 25px;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 439px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text .mural-last {
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.mural-wrapper-background .mural-wrapper .mural-text .mural-last button {
+  background-color: #ffd743;
+  margin-top: 18px;
+  border-radius: 37px;
+  width: 138px;
+  height: 50px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.videoContainer-background {
+  background-color: rgba(19, 67, 128, 0.15);
+  width: 1440px;
+  height: 830px;
+}
+
+.videoContainer-background .video {
+  background-color: #134380;
+  width: 1358px;
+  height: 651px;
+  margin: 42px 41px 47px 41px;
+  border-radius: 9px;
+}
+
+.videoContainer-background .video #videoContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.videoContainer-background .video #videoContainer video {
+  width: 1169px;
+  height: 653px;
+}
+
+.videoContainer-background .video #videoContainer #volumeControl {
+  z-index: 10;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  display: none;
+}
+
+.videoContainer-background .video #videoContainer #volumeControl img {
+  width: 45px;
+}
+
+.videoContainer-background .video #videoContainer #volumeControl img:first-of-type {
+  display: none;
+}
+
+#whatWeDo {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+#whatWeDo ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+#whatWeDo ul li {
+  float: left;
+  position: relative;
+}
+
+#whatWeDo ul li .description1 {
+  font-family: 'Nunito';
+  color: #134380;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: center;
+  width: 254px;
+  height: 146px;
+  margin-top: 57px;
+  margin-left: calc(50% - 130px);
+}
+
+#whatWeDo ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#whatWeDo ul li .card-img {
+  width: 300px;
+  height: 475px;
+  border-radius: 9px;
+}
+
+#whatWeDo ul li .card-link-wrapper {
+  position: absolute;
+  left: calc(50% - 90px);
+  top: 50%;
+}
+
+#whatWeDo ul li .card-link-wrapper a:hover {
+  text-decoration: none;
+}
+
+#whatWeDo ul li .card-link-wrapper a div {
+  width: 180px;
+  height: 67px;
+  background: #ffd743;
+  border-radius: 37px;
+}
+
+#whatWeDo ul li .card-link-wrapper a div span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #134380;
+  max-width: 130px;
+  text-align: center;
+}
+
+footer {
+  background-color: #134380;
+  color: #ffffff;
+  width: 1440px;
+}
+
+footer .icaf-plug {
+  padding-top: 25px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Nunito';
+}
+
+footer .crypto-wrapper button {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #134380;
+  background: #ffd743;
+  border-radius: 37px;
+  width: 176px;
+  height: 48px;
+  margin-top: 28px;
+  margin-left: 33px;
+}
+
+footer .newsletter {
+  text-align: end;
+  margin-top: 28px;
+  margin-right: 23px;
+}
+
+footer .newsletter .sign-up {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+footer .newsletter .email-input {
+  margin-top: 22px;
+}
+
+footer .newsletter .email-input input {
+  border-radius: 9px 0px 0px 9px;
+  width: 380px;
+  height: 37px;
+}
+
+footer .newsletter .email-input button {
+  font-weight: 700;
+  font-size: 12px;
+  color: #134380;
+  background: #ffd743;
+  border-radius: 0px 9px 9px 0px;
+  width: 56px;
+  height: 37px;
+  margin-left: -5px;
+}
+
+footer .footer-bottom {
+  height: 66px;
+  padding-left: 30px;
+  padding-right: 23px;
+}
+
+footer .footer-bottom .deets {
+  text-align: end;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+}
+
+footer .footer-bottom .deets a {
+  color: inherit;
+}
+
+footer .footer-bottom .copyright {
+  text-align: end;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+footer .footer-bottom *:not(.social-media) span ~ span::before,
+footer .footer-bottom *:not(.social-media) span ~ a::before,
+footer .footer-bottom *:not(.social-media) a ~ a::before {
+  content: "|";
+  margin-left: 0.5em;
+  margin-right: 0.7em;
+}
+/*# sourceMappingURL=icaf-main.css.map */
